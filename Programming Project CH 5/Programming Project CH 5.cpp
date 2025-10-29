@@ -2,10 +2,46 @@
 //
 
 #include <iostream>
+#include<fstream>
+#include<string>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	//Variables average, total, count, inputFile, num
+	int average, total, count, num;
+	ifstream inFile;
+	count = 0;
+	total = 0;
+	inFile.open("Random.txt");
+
+	while (inFile >> num)
+	{
+		total += num;
+		count++;
+	}
+	average = total / (double)count;
+
+	inFile.close();
+
+	ofstream outFile;
+	outFile.open("OutOut.out");
+
+	outFile << average << endl;
+	outFile << count << endl;
+	outFile << total << endl;
+
+
+	//Open file
+	//While readline(file) :
+	//Add total
+	//Increment count
+	//Average = total / count
+	//Output average,
+	//Output count
+	//Output total
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
