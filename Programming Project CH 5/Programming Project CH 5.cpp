@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
-
+#include <iomanip>
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+        //For i 0 - 20 inclusive
+        //Loop
+    cout << "This is celcius to Farioaenfajsdb" << endl;
+    for (int c = 0; c <= 20; c++)
+    {
+        //f = 9 / 5 * i + 32
+        double f = (9 / 5.0) * c + 32;
+        //Output f
+        //Output i
+        cout<<"F:"<<left <<setw(5) << f << " C:" << c<<endl;
+       
+    }
+
+        //Do Loop
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
