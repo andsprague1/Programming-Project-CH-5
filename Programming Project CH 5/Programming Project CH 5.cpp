@@ -2,10 +2,37 @@
 //
 
 #include <iostream>
+#include<fstream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	std::ifstream inputFile;
+	inputFile.open("Stores.txt");
+
+	if(!inputFile)
+	{
+		std::cout << "Error will Robinson, ERROR!";
+		return -1;
+	}
+	int sales;
+
+	for (int i = 1; i < 6; i++)
+	{
+		inputFile >> sales;
+		int askterNum = sales / 100;
+		std::cout << "For store " << i << " :";
+		for (int j = 0; j < askterNum; j++)
+		{
+			std::cout << "*";
+		}
+		std::cout << std::endl;
+
+	}
+
+	inputFile.close();
+
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
