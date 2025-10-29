@@ -6,8 +6,8 @@
 using namespace std;
 int main()
 {
-        //For i 0 - 20 inclusive
-        //Loop
+    //For i 0 - 20 inclusive
+    //Loop
     cout << "This is celcius to Farioaenfajsdb" << endl;
     for (int c = 0; c <= 20; c++)
     {
