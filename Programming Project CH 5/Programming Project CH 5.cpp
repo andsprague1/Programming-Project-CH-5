@@ -2,10 +2,33 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+	//Get number number 1 to 15
+	//Verify number
+	int number;
+	do {
+		cout << "Enter a number 1 to 15";
+		cin >> number;
+	} while (number > 15 || number < 1);
+	//Loop number times
+	for (int i = number; i > 0; i--)
+	{
+
+		//Loop number times again
+		for (int j = number; j > 0; j--)
+		{
+			//Output “X”
+			cout << "X";
+		}
+		//End loop again
+		//Output new line
+		cout << endl;
+	
+	}//End loop
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
