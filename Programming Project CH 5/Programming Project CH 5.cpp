@@ -2,10 +2,40 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+//	Vars a least number, a greatest number, an input
+	int least, greatest, num;
+	//Have a loop
+	//Loop until - 99 is entered
+	//Input num
+	cin >> num;
+	greatest = num;
+	least = num;
+	//While(num != -99)
+	while(num != -99)
+	{ 
+		//Check num against greatest
+		if (num > greatest)
+		{
+			//If greater, num is new greatest
+			greatest = num;
+		}
+	//Check num against least number
+		if (num < least)
+		{
+			//If less, num is new least number
+			least = num;
+		}
+		cin >> num;
+	//Get new input
+	}
+
+	cout << "The greast is:" << greatest<<endl;
+	cout << "The least is:" << least;
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
